@@ -4,6 +4,7 @@ public class Customer extends BaseFunctionalities implements CustomerInterface {
 
     private String vehicalType;
     private int rentalDays;
+    private int hours;
 
 
 
@@ -21,5 +22,13 @@ public class Customer extends BaseFunctionalities implements CustomerInterface {
 
     public void setRentalDays(int rentalDays) {
         this.rentalDays = rentalDays;
+    }
+
+    public int getHours() {
+        return hours;
+    }
+
+    public void setHours(int hours) {
+        this.hours = hours;
     }
 }

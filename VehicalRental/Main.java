@@ -9,11 +9,14 @@ public class Main {
         CarInterface cr = new Car();
 
         customer.setVehicalType("Bike");
-        customer.setRentalDays(5);
+        customer.setRentalDays(2);
+        customer.setHours(48);
 
         bk.setVehNo(1224);
         bk.setRent(200);
         bk.book(customer.getRentalDays());
+        bk.book(customer.getRentalDays(),customer.getHours());
+
         bk.helmet("Helmet Included");
 
         CustomerInterface customer2 =new Customer();
